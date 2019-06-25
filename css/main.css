@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.pie-picture {
+    background-image: url(apple-pie.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.apple-pie {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 600px;
+    font-family: sans-serif;
+}
+
+.history {
+    padding: 40px 220px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.info-picture {
+    width: 25%;
+    display: block;
+    margin: auto;
+}
+
+.border {
+    width: 60%;
+    border-bottom: 2px solid grey;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    padding: 40px 220px;
+    font-family: sans-serif;
+}
+
+.title {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li:before {
+    content: "- "
+}
+
+ol {
+    list-style-type: none; /* Убираем исходные маркеры */
+    counter-reset:  item;
+}
+
+ol li:before {
+    content: counter(item) ') ';
+    counter-increment: item;
+}
+
+
